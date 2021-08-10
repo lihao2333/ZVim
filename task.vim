@@ -14,6 +14,7 @@ function! WaitCurrTask()
     execute 's/\[.\]/[*]'
 endfunction
 
+set shiftwidth=2
 noremap <space>oo :call AddTack()<CR>
 noremap <space>ok :call DoneCurrTask()<CR>
 noremap <space>oi :call WaitCurrTask()<CR>

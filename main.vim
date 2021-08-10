@@ -14,7 +14,12 @@ execute 'source'.expand('<sfile>:p:h').'/color.vim'
 execute 'source'.expand('<sfile>:p:h').'/indent.vim'
 execute 'source'.expand('<sfile>:p:h').'/search.vim'
 execute 'source'.expand('<sfile>:p:h').'/print/print.vim'
-execute 'source'.expand('<sfile>:p:h').'/task.vim'
+
+augroup md
+    autocmd!
+    autocmd FileType markdown execute 'source'.expand('<sfile>:p:h').'/task.vim'
+augroup END
+
 execute 'source'.expand('<sfile>:p:h').'/leader.vim'
 execute 'source'.expand('<sfile>:p:h').'/highlights/highlights.vim'
 
