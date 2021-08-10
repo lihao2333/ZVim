@@ -11,7 +11,7 @@ function! UndoCurrTask()
 endfunction
 
 function! WaitCurrTask()
-    execute 's/\[.\]/[*]'
+    execute 's/\[.\]/[-]'
 endfunction
 
 set shiftwidth=2
