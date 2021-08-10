@@ -1,5 +1,5 @@
 function! AddTack()
-    normal o-[ ] 
+    normal o- [ ] 
 endfunction
 
 function! DoneCurrTask()
